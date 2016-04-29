@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.yo.remotecontrol"
+        minSdkVersion 12
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java',
+                            'src/main/java/com/yo/remotecontrol',
+                            'src/main/java/com/directtvdevices',
+                            'src/main/java/com/discoverymanagers',
+                            'src/main/java/com/interfaces',
+                            'src/main/java/com/deviceui',
+                            'src/main/java/com/dialdevices',
+                            'src/main/java/com/firetvdevices',
+                            'src/main/java/com/utilities',
+                            'src/main/java/com/rokudevices']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'org.jsoup:jsoup:1.8.2'
+    compile files('json-parse.jar')
+}
+
+

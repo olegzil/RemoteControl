@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/roku_app_item_table_layout"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:id="@+id/image_app_icon" />
+
+        <EditText
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_app_description"
+            android:layout_weight="1"
+            android:textColor="#ffff00"
+            android:layout_gravity="right"
+            />
+
+        <EditText
+            android:cursorVisible="false"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+
+            android:textIsSelectable="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#ffff00"
+            android:ems="10"
+            android:id="@+id/text_app_id"
+            android:layout_weight="1"
+            />
+
+    </TableRow>
+</TableLayout>
